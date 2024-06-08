@@ -1,0 +1,7 @@
+{
+  "name": "appDeveloper",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}
