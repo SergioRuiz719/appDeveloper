@@ -1,0 +1,34 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>
+      Multiplos
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content class="ion-padding">
+  <ion-item>
+    <!--Petición al usuario para ingresar un numero-->
+    <ion-label position="floating">Ingresa el Numero</ion-label>
+    <ion-input [(ngModel)]="Numero" type="number"></ion-input>
+  </ion-item>
+  <!--Implementación de nuestro metodo al momento de hacer clic en el botón-->
+  <ion-button expand="full" (click)="generarNumeros()">Generar</ion-button>
+
+  <!--Mostrar los arreglos de cada multiplo-->
+  <ion-item *ngIf="numeracion.length">
+    <ion-textarea readonly [value]="'Numeración: ' + numeracion.join(', ')" class="numeracion-text"></ion-textarea>
+  </ion-item>
+  <ion-item *ngIf="multiplos3.length">
+    <ion-textarea readonly [value]="'Multiplos de 3: ' + multiplos3.join(', ')" class="multiplos3-text"></ion-textarea>
+  </ion-item>
+  <ion-item *ngIf="multiplos5.length">
+    <ion-textarea readonly [value]="'Multiplos de 5: ' + multiplos5.join(', ')" class="multiplos5-text"></ion-textarea>
+  </ion-item>
+  <ion-item *ngIf="multiplos7.length">
+    <ion-textarea readonly [value]="'Multiplos de 7: ' + multiplos7.join(', ')" class="multiplos7-text"></ion-textarea>
+  </ion-item>
+  <ion-item *ngIf="noMultiplos.length">
+    <ion-textarea readonly [value]="'No tiene multiplo: ' + noMultiplos.join(', ')" class="noMultiplos-text"></ion-textarea>
+  </ion-item>
+</ion-content>

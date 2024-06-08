@@ -35,3 +35,21 @@
 /* @import "@ionic/angular/css/palettes/dark.always.css"; */
 /* @import "@ionic/angular/css/palettes/dark.class.css"; */
 @import "@ionic/angular/css/palettes/dark.system.css";
+
+/*dar color a cada multiplo*/
+ion-textarea.multiplos3-text {
+    color: blue;
+  }
+  
+  ion-textarea.multiplos5-text {
+    color: green;
+  }
+  
+  ion-textarea.multiplos7-text {
+    color: red;
+  }
+  
+  ion-textarea.noMultiplos-text {
+    color: black;
+  }
+  
